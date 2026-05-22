@@ -187,6 +187,26 @@
             "name": "Zenodo"
           },
           "inLanguage": "en"
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://github.com/AKubanski/rlds-mat",
+          "name": "RLDS-MAT",
+          "description": "Scientific Python SDK for certifying Regime-Limited Dynamical Systems.",
+          "codeRepository": "https://github.com/AKubanski/rlds-mat",
+          "url": "https://github.com/AKubanski/rlds-mat",
+          "programmingLanguage": "Python",
+          "runtimePlatform": "Python 3",
+          "softwareVersion": "1.1.0",
+          "license": "https://github.com/AKubanski/rlds-mat/blob/main/LICENSE",
+          "author": {
+            "@id": "https://research.kubanski.pro/#aleksander-kubanski"
+          },
+          "isBasedOn": [
+            "https://zenodo.org/records/19627496",
+            "https://zenodo.org/records/19628881"
+          ],
+          "inLanguage": "en"
         }
       ]
     }
@@ -269,6 +289,31 @@
             display: inline-block;
             margin-right: 20px;
             margin-bottom: 10px;
+        }
+
+        .links span {
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        .software-command {
+            background: rgba(15, 23, 42, 0.85);
+            border: 1px solid rgba(125, 211, 252, 0.18);
+            border-radius: 10px;
+            color: #e0f2fe;
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 12px 0 18px 0;
+            overflow-x: auto;
+            padding: 12px 14px;
+            white-space: nowrap;
+        }
+
+        .coming-soon {
+            color: #94a3b8;
+            font-weight: 700;
         }
 
         .work-title {
@@ -2148,6 +2193,34 @@ document.addEventListener('DOMContentLoaded',function(){
                 to the effective RLDS attractor description.
             </p>
             <a href="https://zenodo.org/records/19640630" target="_blank">View on Zenodo</a>
+        </section>
+
+        <section class="card">
+            <h2>Software</h2>
+
+            <div class="work-title">RLDS-MAT — Scientific Python SDK</div>
+            <p class="work-description">
+                RLDS-MAT is a scientific Python toolkit for the analysis and certification
+                of Regime-Limited Dynamical Systems. It implements the mathematical
+                framework developed in RLDS I–II, including threshold computation,
+                auxiliary-function geometry classification, equilibrium detection,
+                stability analysis, command-line tools, reports, and plots.
+            </p>
+
+            <p class="work-description">
+                The package is designed as a computational companion to the RLDS paper
+                series, allowing external models to be tested against the RLDS reduction
+                criteria.
+            </p>
+
+            <div class="software-command">pip install rlds-mat</div>
+
+            <div class="links">
+                <a href="https://github.com/AKubanski/rlds-mat" target="_blank">GitHub</a>
+                <a href="https://github.com/AKubanski/rlds-mat#readme" target="_blank">Documentation</a>
+                <span class="coming-soon">PyPI — coming soon</span>
+                <span class="coming-soon">Zenodo DOI — coming soon</span>
+            </div>
         </section>
 
         <section class="card">
